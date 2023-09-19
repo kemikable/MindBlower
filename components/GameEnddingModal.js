@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
+import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { setIsEnd } from "../redux/endGameSlice";
-import { setWinnings } from "../redux/winningSlice";
+// import { setWinnings } from "../redux/winningSlice";
 
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -15,7 +16,7 @@ import {
 
 export default function GameEnddingModal() {
   const isEnd = useSelector((state) => state.end.isEnd);
-  const correct = useSelector((state) => state.correctCount.correct);
+  // const correct = useSelector((state) => state.correctCount.correct);
   const winnings = useSelector((state) => state.winningCount.winnings);
   const navigation = useNavigation();
   const dispatch = useDispatch();
